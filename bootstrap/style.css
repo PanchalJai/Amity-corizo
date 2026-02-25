@@ -1,0 +1,100 @@
+.card{
+    transition: 0.5s;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.btn {
+   transition: 0.5s;
+   
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+   
+}
+
+.about-section {
+    text-align: justify;
+    background-color: beige;
+}
+
+.contact-section input {
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.contact-section textarea {
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: rgb(198, 208, 213);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+
+    text-decoration: underline;
+    color: white;
+}
+
+.fa-facebook {
+    background-color: white;
+    padding: 3px 0px;
+    color: blue;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.fa-instagram {
+    color: white;
+    border-radius: 5px;
+    padding: 3px 0px;
+    background: linear-gradient(45deg,
+            #405de6,
+            /* Blue*/
+            #5851db,
+            /* Darker blue/ perpule */
+            #833ab4,
+            /* purple*/
+            #c13584,
+            /* megenta*/
+            #e1306c,
+            /* red orange*/
+            #fd1d1d
+            /* red*/
+        );
+}
+
+.fa-youtube {
+    background-color: white;
+    padding: 3px 0px;
+    color: red;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.fa-x-twitter {
+    background-color: white;
+    padding: 3px;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.footer-links-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
