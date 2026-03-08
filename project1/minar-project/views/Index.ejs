@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styles/style.css" rel="stylesheet" >
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="index-heading mb-5">Students Record</h1>
+    <a href="http://localhost:5000/new" class="new-student-link" type="button" >Add new Student</a>
+
+    <% if(!data || data.length === 0) { %>
+        <div class="data-box-empty">
+            <h3>Student data not found! <br> Please add some new Data</h3>
+        </div>
+        
+    <% } else { %>
+        <Table class="data-table" >
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+           <% for(let i = 0; i< data.length ; i++ )  {  %> 
+                <tr>
+                    <td><%= data[i].rollNo %></td>
+                    <td><%= data[i].name %></td>
+                    <td><%= data[i].class %></td>
+                    <td><%= data[i].address %></td>
+                    <td >
+                        <div class="actions">
+                            <a href="http://localhost:5000/update/student/<%=data[i]._id %>"
+                                 class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></a> 
+                            <div>
+                                <form action="http://localhost:5000/delete/student/<%=data[i]._id %>?_method=DELETE" 
+                                    method="post">
+                                    <button type="submit" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+         <%  }; %> 
+        
+        
+        </Table>
+
+    <% } %>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

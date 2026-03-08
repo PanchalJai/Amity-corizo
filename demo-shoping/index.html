@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Product page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+             <img class="header-image" src="notes.png" >
+            <h1>Shoping List</h1>
+        </header>
+           
+            <form action="" id="item-form">
+                <div class="form-control">
+                    <input type="text" placeholder="Enter Item" id="item-input" name="item" class="input-item">
+                </div>
+                
+                <div class="form-control">
+                    <button type="submit" class="btn"><i class="fa-solid fa-plus"></i> Add item</button>
+                </div>
+                
+            </form>
+            <input type="text" class="form-input-filter" id="filter" placeholder="filter">
+
+            <ul class="items" id="item-list">
+                <li class="item-list-product">
+                    Apple 
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i> 
+                    </button>
+                </li>
+                <li class="item-list-product" >
+                    Orange Juice 
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li class="item-list-product">
+                    Oreao 
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li class="item-list-product">
+                    Milk 
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <button id="clear" class="btn-clear">
+                Clear all
+            </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

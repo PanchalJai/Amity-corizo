@@ -1,0 +1,108 @@
+
+.container {
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px 50px ;
+    box-shadow: 5px 5px 15px 5px;
+    
+}
+
+
+.header-image {
+    width: 100px;
+    height: 100px;
+    
+}
+
+body {
+    background-color: aqua;
+}
+
+h1 {
+    display: inline;
+    font-size: 60px;
+    margin: 10px 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.input-item {
+    width: 70%;
+    height: 2rem;
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px;
+
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    font-size: x-large;
+    align-items: start;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.form-input-filter {
+    width: 70%;
+    height: 2rem;
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border:none;
+    border-bottom: 1px solid rgb(156, 155, 155);
+}
+
+
+
+.btn-link {
+    border: none;
+    background-color: white;
+}
+
+.btn-clear {
+    width: 90%;
+    padding: 0.5rem;
+    background-color: rgb(200, 79, 79);
+    color: white;
+    font-size: x-large;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.items {
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 0px;
+
+    
+}
+
+.item-list-product {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    padding: 10px ;
+    margin-left: 10px;
+
+}
