@@ -4,4 +4,4 @@
 - DataBase Connectivity
   - MongoDB Atlas
 
- Navigation : Amity-corizo/miner-project
+ Navigation : Amity-corizo/project1/minar-project
